@@ -1,0 +1,256 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 100px;
+      background: url(road.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+img{
+	width:220px;
+	border-radius:50%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+#section-a{
+	background-color:#362d36;
+	display:grid;
+	grid-template-columns:40% auto;
+	padding:6em 1em;	
+}
+
+.left h2{
+	text-align:center;
+	color:#f1f1f1;
+}
+.left p{
+	text-align:center;
+	font-size:20px;
+	color:#f1f1f1;
+}
+.left a{
+	color:#D05985;
+}
+
+.left a:link{
+	text-decoration:none;
+}
+
+.left a:hover{
+	text-decoration:underline;
+}
+.left i:hover{
+	opacity: 1;
+	background-color:#272939;
+	transition: .4s all;
+}
+.right p{
+	font-size:22px;
+	color:#f1f1f1;
+}
+.right h1{
+	color:#6F7881;
+}
+
+.education{
+	display:grid;
+	grid-template-columns:40% auto;
+	padding-top:0;
+}
+
+.interest h2{
+	color:#6F7881;
+}
+
+.interest li{
+	font-size:18px;
+	line-height:1.5;
+	color:#f1f1f1;
+}
+.edu h2{
+	color:#6F7881;
+}
+
+.edu ul{
+	list-style-type:none;
+	color:#f1f1f1;
+}
+.edu p{
+	font-size:15px;
+	padding-left:32px;
+	color:#9B9CA1;
+}
+
+#section-b{
+	background-color:#272935;
+	display:grid;
+	grid-template-columns:40% auto;
+      padding:5em 1em;
+      color:white;	
+}
+.pub{
+      text-align: center;
+}
+
+#section-c{
+	background-color:#362d36;
+	display:grid;
+	grid-template-columns:40% auto;
+      padding:5em 1em;
+      color:white;	
+}
+.exp{
+      text-align: center;
+}
+#section-d{
+	background-color:#272935;
+	display:grid;
+	grid-template-columns:40% auto;
+      padding:5em 1em;
+      color:white;	
+}
+.code{
+      text-align: center;
+}
+#section-e{
+	background-color:#362d36;
+	display:grid;
+	grid-template-columns:40% auto;
+      padding:5em 1em;
+      color:white;	
+}
+.cv{
+      text-align: center;
+}
+.download a{
+      color:white;
+      text-decoration: none;
+}
+
+.name {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 2px;
+}
+.name li{
+      list-style: none;
+}
+.name li a{
+      text-decoration: none;
+      color: #fff;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      transition: .6s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 10px;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 700px) {
+	.section-a{
+		grid-template-columns:auto;
+		grid-template-rows:auto;
+      }
+      .section-b{
+		grid-template-columns:auto;
+		grid-template-rows:auto;
+      }
+      .section-c{
+		grid-template-columns:auto;
+		grid-template-rows:auto;
+      }
+      .section-d{
+		grid-template-columns:auto;
+		grid-template-rows:auto;
+      }
+      .section-e{
+		grid-template-columns:auto;
+		grid-template-rows:auto;
+      }
+      
+	ul, .education{
+		grid-template-columns:auto;
+		grid-template-rows:auto;
+	}
+      .name {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+      nav.black ul {
+            background: #000;
+      }
+      .showing {
+            max-height: 34em;
+      }
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+      .menu-icon {
+            display: block;
+      }
+
+}
